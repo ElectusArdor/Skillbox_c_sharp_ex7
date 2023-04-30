@@ -22,5 +22,10 @@ namespace Ex7
             this.Birthday = Birthday;
             this.BirthPlace = BirthPlace;
         }
+
+        public void Print()
+        {
+            Console.WriteLine($"{ID,7}{NoteDate,24}{FIO,34}{Age,8}{Height,6}{Birthday.ToShortDateString(),15}{BirthPlace,24}");
+        }
     }
 }
